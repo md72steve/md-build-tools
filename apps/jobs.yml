@@ -1,0 +1,18 @@
+- project:
+    name: 'sb.apps'
+    application: !include: applications.yml
+    jobs:
+      - 'master.sb.apps.{application}'
+      - 'mr.sb.apps.{application}'
+
+- job-template:
+    id: 'master.sb.apps.{application}'
+    name: 'master.sb.apps.{application}'
+    project-type: pipeline
+    dsl: !include-raw-escape: '{jenkinsfile}'
+
+- job-template:
+    id: 'mr.sb.apps.{application}'
+    name: 'mr.sb.apps.{application}'
+    project-type: pipeline
+    dsl: !include-raw-escape: '{jenkinsfile}'

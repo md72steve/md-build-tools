@@ -1,0 +1,6 @@
+- demo-alpha:
+    jenkinsfile: ../jenkinsfiles/demo.build.groovy
+- demo-beta:
+    jenkinsfile: ../jenkinsfiles/demo.build.groovy
+- demo-gamma:
+    jenkinsfile: ../jenkinsfiles/demo.build.groovy

@@ -1,0 +1,33 @@
+- defaults:
+    name: global
+
+- project:
+    name: 'view'
+    views:
+      - Misc
+      - MR
+      - Master
+
+- view-template:
+    name: 'Misc'
+    id: 'Misc'
+    description: 'Misc jobs'
+    view-type: list
+    regex: 'misc.*'
+    columns: !include: columns.yml
+
+- view-template:
+    name: 'MR'
+    id: 'MR'
+    description: 'Jobs triggered by creating a pull request'
+    view-type: list
+    regex: 'mr.*'
+    columns: !include: columns.yml
+
+- view-template:
+    name: 'Master'
+    id: 'Master'
+    description: 'Jobs triggered by pushing on master'
+    view-type: list
+    regex: 'master.*'
+    columns: !include: columns.yml
