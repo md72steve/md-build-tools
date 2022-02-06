@@ -1,6 +1,4 @@
-- demo-alpha:
+- dto-cr-ui:
     jenkinsfile: ../jenkinsfiles/demo.build.groovy
-- demo-beta:
-    jenkinsfile: ../jenkinsfiles/demo.build.groovy
-- demo-gamma:
+- dto-cr-api:
     jenkinsfile: ../jenkinsfiles/demo.build.groovy
